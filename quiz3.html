@@ -1,0 +1,27 @@
+<html>
+    <head>
+            <script src="jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+
+            <input type="text" id="textfield"/>
+            <button id="add">Add to Wishlist</button>
+            <div class="wishlist">
+            <h1>Wishlist</h1>
+            <ul id="list">
+                <li></li>
+            </ul>
+            </div>
+
+
+
+            <script>
+            $('#add').click(
+                function(){
+                    var value = $('#textfield').val();
+                    $('#list').append('<li>' + value+ '</li>');
+                }
+            )
+            </script>
+        </body>
+</html>
